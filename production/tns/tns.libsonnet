@@ -1,7 +1,7 @@
 local k = import 'ksonnet-util/kausal.libsonnet';
 local config = import 'config.libsonnet';
 {
-  config(): config,
+  defaults(): config,
 
   new(config):: {
     local new_app(name, arg, image) = {
