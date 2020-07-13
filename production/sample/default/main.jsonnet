@@ -74,7 +74,7 @@ prometheus + promtail + {
               derivedFields: [{
                 matcherRegex: 'traceID=(\\w+)',
                 name: 'TraceID',
-                url: '/jaeger/trace/$${__value.raw}',
+                url: '../jaeger/trace/$${__value.raw}',
               }],
             },
           },
